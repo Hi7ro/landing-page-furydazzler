@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="video-section">
+    <video id="my_video" loop (click)="pause()">
+      <source src="{{ video }}">
+    </video>
+    <div id="overlay" [class.fadeOut]="isPlaying">
+      <div class="header-layout">
+        <img
+          src="https://global-uploads.webflow.com/63234a846c8cfe190247a6b7/63430fa23ef0a5a03a4a0770_Mask%20group.webp">
+        <h1>
+          <div *ngIf="showHeadline" class="typed-out">{{ headline[currentLine] }}</div>
+        </h1>
+        <span>Click To Play The Video</span>
+        <i class="bi bi-play-circle" (click)="play()"></i>
+      </div>
+    </div>
+
+  </div>
+  <app-button>
+  </app-button>
+</div>

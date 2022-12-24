@@ -1,0 +1,124 @@
+@import "../../../styles.scss";
+
+.container {
+  background: $dark-theme;
+  box-shadow: 0px 0px 10px white;
+  video {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+  }
+  #overlay {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  img {
+    width: 350px;
+  }
+  .header-layout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    h1 {
+      color: white;
+      text-shadow: 1px 1px 10px gold;
+      text-align: center;
+    }
+    span {
+      margin-top: 0.3em;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+    }
+    i {
+      margin-top: 20px;
+      font-size: 3em;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  app-button {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 1.5s ease-out forwards;
+  z-index: -999;
+}
+
+.fadeIn {
+  animation: fadeInAnimation 0.7s ease-in forwards;
+  z-index: 900;
+}
+.typed-out {
+  overflow: hidden;
+  border-right: 0.1em solid var(--primary);
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+  font-size: 50px;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  //Ipad view
+  img {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  //Mobile view
+  img {
+    width: 200px !important;
+  }
+  .header-layout {
+    .typed-out {
+      font-size: 30px !important;
+    }
+    span {
+      font-size: 20px !important;
+    }
+  }
+}

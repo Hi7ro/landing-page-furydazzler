@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$grey-theme: #131111;
+$dark-theme: #000414;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Anonymous Pro", monospace;
+  scroll-behavior: smooth;
+}

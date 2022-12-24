@@ -1,0 +1,101 @@
+@import "../../../styles.scss";
+
+.container {
+  height: 65vh;
+  width: 100vw;
+  background-color: $grey-theme;
+  box-shadow: 1px 1px 100px $dark-theme;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .the-world-box {
+    background-color: $dark-theme;
+    border: 2px solid #e9ca55;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px black;
+    height: 75vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+
+    h2 {
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+      font-size: 35px;
+      color: white;
+      text-shadow: 1px 1px 10px #e9ca55;
+      border-bottom: 2px solid #988336;
+    }
+    .box {
+      width: 540px;
+      height: 100px;
+      color: white;
+      padding: 10px 70px;
+      font-size: 19px;
+      font-weight: lighter;
+      text-align: left;
+    }
+    button {
+      background-color: #fff1db;
+      color: $grey-theme;
+      position: absolute;
+      bottom: -20px;
+      font-weight: bold;
+      font-size: 20px;
+      width: 190px;
+      height: 60px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        animation: 225ms zoomIn forwards;
+        box-shadow: 1px 1px 5px #fae083;
+      }
+
+      &:active {
+        background-color: #ffe3b7;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .the-world-box {
+    width: 60vw !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .the-world-box {
+    width: 90vw !important;
+    .box {
+      height: 90px !important;
+      width: 300px !important;
+      padding: 0px 0px !important;
+      font-size: 15px !important;
+    }
+    button {
+      height: 50px !important;
+      width: 160px !important;
+      bottom: -30px !important;
+    }
+  }
+}
