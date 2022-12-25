@@ -1,0 +1,40 @@
+@import "../../styles.scss";
+
+.container {
+  height: 30vh;
+  width: 100vw;
+  box-shadow: -1px -1px 10px black;
+  background-color: $dark-theme;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .links {
+    display: flex;
+    li {
+      margin: 10px;
+      a {
+        color: white !important;
+        &:hover {
+          color: rgb(174, 174, 174) !important;
+        }
+      }
+    }
+  }
+  .socials {
+    display: flex;
+
+    li {
+      margin: 10px;
+
+      i {
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: rgb(174, 174, 174);
+        }
+      }
+    }
+  }
+}

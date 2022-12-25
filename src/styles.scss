@@ -4,10 +4,16 @@
 
 $grey-theme: #131111;
 $dark-theme: #000414;
+$gold-border: #e9ca55;
 
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Anonymous Pro", monospace;
   scroll-behavior: smooth;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
 }

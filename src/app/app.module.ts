@@ -12,6 +12,7 @@ import { FaqComponent } from './Components/faq/faq.component';
 import { NewsletterComponent } from './Components/newsletter/newsletter.component';
 import { PrivacyComponent } from './Components/privacy/privacy.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlanComponent } from './Components/plan/plan.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     NewsletterComponent,
     PrivacyComponent,
     FooterComponent,
+    PlanComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
