@@ -13,6 +13,8 @@ import { NewsletterComponent } from './Components/newsletter/newsletter.componen
 import { PrivacyComponent } from './Components/privacy/privacy.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanComponent } from './Components/plan/plan.component';
+import { TeachComponent } from './Components/teach/teach.component';
+import { PhilosophyComponent } from './Components/philosophy/philosophy.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PlanComponent } from './Components/plan/plan.component';
     PrivacyComponent,
     FooterComponent,
     PlanComponent,
+    TeachComponent,
+    PhilosophyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

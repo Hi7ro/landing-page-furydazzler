@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="box">
+    <div class="box-col" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600"
+      data-aos-offset="0">
+      <div class="h2">
+        <h2>OUR TEACHING PHILOSOPHY</h2>
+        <div class="h2-line"></div>
+      </div>
+      <p>Our members learn to make money while making money.</p>
+      <p>Once you're inside, we'll immediately focus on making you earn your first profits and then
+        keep compounding on your success over time.</p>
+    </div>
+    <div class="image-border">
+      <div class="img-overflow">
+        <img *ngIf="showImage" class="fadeInAnimation" src="{{ image[currentImage] }}" alt="">
+      </div>
+      <p *ngIf="showDay" class="text fadeInAnimation"> {{ day[currentImage] }}</p>
+
+    </div>
+
+  </div>
+
+</div>

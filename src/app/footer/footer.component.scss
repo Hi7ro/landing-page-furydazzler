@@ -1,6 +1,7 @@
 @import "../../styles.scss";
 
 .container {
+  overflow: hidden;
   height: 30vh;
   width: 100vw;
   box-shadow: -1px -1px 10px black;
