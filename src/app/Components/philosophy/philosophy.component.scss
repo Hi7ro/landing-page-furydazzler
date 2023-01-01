@@ -1,11 +1,12 @@
 @import "../../../styles.scss";
 
 .container {
-  height: 60vh;
+  min-height: 60vh;
   width: 100vw;
   overflow: hidden;
   background-color: $dark-theme;
   color: whitesmoke;
+  box-shadow: 1px 1px 100px $dark-theme;
   display: flex;
   justify-content: center;
   padding: 10em 15em;

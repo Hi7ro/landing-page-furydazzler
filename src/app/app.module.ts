@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PlanComponent } from './Components/plan/plan.component';
 import { TeachComponent } from './Components/teach/teach.component';
 import { PhilosophyComponent } from './Components/philosophy/philosophy.component';
+import { Copy2Component } from './Components/copy2/copy2.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PhilosophyComponent } from './Components/philosophy/philosophy.componen
     PlanComponent,
     TeachComponent,
     PhilosophyComponent,
+    Copy2Component,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
