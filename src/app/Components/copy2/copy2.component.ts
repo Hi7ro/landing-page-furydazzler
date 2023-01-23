@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Copy2Component implements OnInit {
 
+  hover = false;
+
   constructor() { }
 
   ngOnInit(): void {
