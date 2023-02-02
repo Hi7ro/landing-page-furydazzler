@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
   hideText = true;
+  rotate = false;
 
   headerText = [
     '"How quickly will I make my money back?"',
@@ -25,39 +26,38 @@ export class FaqComponent implements OnInit {
   week, you can shock your friends and family by becoming the kid who’s
   leveling up in real life.
   '
-    `
-  // Of course not. <br />
-  // <br />
-  // This is a mentoring program, and you are here to learn from us. <br />
-  // <br />
-  // Just follow our step-by-step lessons and guidance, and you will start a
-  // profitable business.
-  // `,
-  // `
-  // Rule #1 of The Real World is SPEED. <br />
-  // <br />
-  // The methods we teach are designed for rapid execution. <br />
-  // <br />
-  // So all you need is a minimum of 30 minutes a day to listen to your <br>
-  // professors and apply what you’ve learned.
-  // `,
+    `,
+    // Of course not. <br />
+    // <br />
+    // This is a mentoring program, and you are here to learn from us. <br />
+    // <br />
+    // Just follow our step-by-step lessons and guidance, and you will start a
+    // profitable business.
+    // `,
+    // `
+    // Rule #1 of The Real World is SPEED. <br />
+    // <br />
+    // The methods we teach are designed for rapid execution. <br />
+    // <br />
+    // So all you need is a minimum of 30 minutes a day to listen to your <br>
+    // professors and apply what you’ve learned.
+    // `,
   ];
 
   constructor() {}
-  
 
   ngOnInit(): void {}
 
-  showText(num: number) {
-    for(let i = num; i <= this.headerText.length; i++){
-      if (this.hideText == false) {
-        document.getElementById('img').classList.add('rotated');
-      } else {
-        document.getElementById('img').classList.remove('rotated');
-      }
+  rotated() {}
 
+  showText(num: number) {
+    for (let i = num; i <= this.headerText.length; i++) {
+      if (this.hideText == false) {
+        document.querySelector('img.img').classList.add('rotated');
+      } else {
+        document.querySelector('img.img').classList.remove('rotated');
+      }
     }
     this.hideText = !this.hideText;
-
   }
 }

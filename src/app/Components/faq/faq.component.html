@@ -1,17 +1,16 @@
 <div class="container">
   <div class="box">
     <h2>FAQ</h2>
-    <div *ngFor="let text of headerText"  class="question-box">
+    <div *ngFor="let text of headerText" class="question-box">
       <em (click)="showText(0)">
-       <strong>{{ text }}</strong> 
-        <img class="img"
-          id="img"
+        <strong>{{ text }}</strong>
+        <img
+          class="img"
           src="https://uploads-ssl.webflow.com/6331a1b1671767ba6bf8b8d6/6332110e83ef2d444b0a6b23_Interface%20Add%201%20by%20Streamlinehq.svg"
       /></em>
-      <p  class="text" [hidden]="hideText">
+      <p class="text" [hidden]="hideText">
         {{ headerInfo[0] }}
       </p>
-
     </div>
   </div>
 </div>

@@ -9,6 +9,8 @@ export class Copy2Component implements OnInit {
 
   hover = false;
 
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -9,7 +9,6 @@ import { HomeComponent } from './Components/home/home.component';
 import { CopyComponent } from './Components/copy/copy.component';
 import { TestimonialsComponent } from './Components/testimonials/testimonials.component';
 import { FaqComponent } from './Components/faq/faq.component';
-import { NewsletterComponent } from './Components/newsletter/newsletter.component';
 import { PrivacyComponent } from './Components/privacy/privacy.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlanComponent } from './Components/plan/plan.component';
@@ -26,7 +25,6 @@ import { Copy2Component } from './Components/copy2/copy2.component';
     CopyComponent,
     TestimonialsComponent,
     FaqComponent,
-    NewsletterComponent,
     PrivacyComponent,
     FooterComponent,
     PlanComponent,
