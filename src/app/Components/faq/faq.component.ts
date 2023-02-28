@@ -10,15 +10,14 @@ export class FaqComponent implements OnInit {
   rotate = false;
 
   headerText = [
-    '"How quickly will I make my money back?"',
-    '“Do I need money to start?”',
+    '',
     '“Does my age really not matter?”',
     '“I know nothing about the skills you teach. Is it a problem?”',
     "“I don't have a lot of time available, can I still apply?”",
   ];
   headerInfo = [
-    'It depends on how seriously you take HU.',
-    'Not necessarily.\n \n A lot of our students chose copywriting and freelancing, which are \nbusinesses without money requirements.',
+    '',
+    '',
     `
   It really doesn’t. <br />
   <br />

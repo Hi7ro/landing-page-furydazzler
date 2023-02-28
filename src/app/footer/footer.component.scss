@@ -10,10 +10,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  ul {
+    padding: 0;
+  }
   .links {
     display: flex;
     li {
       margin: 10px;
+      padding: 0;
       a {
         color: white !important;
         &:hover {
@@ -33,7 +37,7 @@
         color: white;
         cursor: pointer;
         &:hover {
-          color: rgb(174, 174, 174);
+          color: rgb(234, 85, 85);
         }
       }
     }
@@ -50,10 +54,10 @@
     justify-content: center;
     align-items: center;
 
-
     .links {
       text-align: center;
       margin-top: 1em;
     }
   }
 }
+ 
