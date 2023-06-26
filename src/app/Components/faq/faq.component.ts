@@ -11,9 +11,9 @@ export class FaqComponent implements OnInit {
 
   headerText = [
     '',
-    '“Does my age really not matter?”',
-    '“I know nothing about the skills you teach. Is it a problem?”',
-    "“I don't have a lot of time available, can I still apply?”",
+    '“”',
+    '“”',
+    "“”",
   ];
   headerInfo = [
     '',
@@ -53,10 +53,11 @@ export class FaqComponent implements OnInit {
     for (let i = num; i <= this.headerText.length; i++) {
       if (this.hideText == false) {
         document.querySelector('img.img').classList.add('rotated');
+        this.hideText = !this.hideText;
       } else {
         document.querySelector('img.img').classList.remove('rotated');
+        this.hideText = !this.hideText;
       }
     }
-    this.hideText = !this.hideText;
   }
 }
