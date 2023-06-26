@@ -48,7 +48,7 @@
         width: 20px;
         margin-left: 20px;
         cursor: pointer;
-        transition: all 255ms ease-in-out;
+        transition: all 455ms ease-in-out;
 
         :target {
           transform: rotate(45deg);
@@ -62,7 +62,7 @@
 
       .rotated {
         transform: rotate(45deg);
-        transition: all 255ms ease-in-out;
+        transition: all 455ms ease-in-out;
       }
     }
   }

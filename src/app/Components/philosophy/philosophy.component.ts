@@ -19,6 +19,8 @@ export class PhilosophyComponent implements OnInit {
   showImage = true;
   showDay = true;
 
+  overlay = false;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -37,5 +39,9 @@ export class PhilosophyComponent implements OnInit {
         this.showDay = true;
       }, 0.8);
     }, 4000);
+  }
+
+  showImageOverlay() {
+    this.overlay = true;
   }
 }
